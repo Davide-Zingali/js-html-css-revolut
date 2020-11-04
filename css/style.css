@@ -25,13 +25,13 @@ a {
     margin: 0 15px;
     font-size: 20px;
 }
-.lingua {
+.aggiungi {
     display: none;
     position: absolute;
     left: 15px;
     top: 25px;
 }
-.lingua > li {
+.aggiungi > li {
     list-style: none;
     margin: 5px 0;
 }

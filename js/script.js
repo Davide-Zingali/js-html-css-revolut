@@ -9,19 +9,13 @@
 // 5.consiglio: degli eventuali casi limte/controlli (es. voglio che sia aperto solo un dropdown alla volta, preoccupatevi alla fine).
 
 $(document).ready(function () {
-    var rela = $('.relativo');
-    var lingua = $('.lingua');
-    rela.click(function () {
-        lingua.toggleClass('dblock');
+
+    
+    var clicca = $('.cliccami');
+
+    clicca.click(function () {
+        $(this).next().toggleClass('dblock');
     });
-
-
-
-
-
-
-
-
 
 });
 
