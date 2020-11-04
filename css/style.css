@@ -1,46 +1,69 @@
+/* regole generali */
 * {
     box-sizing: border-box;
     padding: 0%;
     margin: 0%;
 }
+
+/* navbar */
 nav {
+    margin-top: 30px;
     display: flex;
-    /* debug */
-    background-color: gray;
-    height: 100px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
+
+/* immagini */
+img {
+    width: 100px;
+}
+
+/* selezione nero per personale */
+.sx > li:nth-child(2) > a {
+    color: black;
+}
+
 .sx, .dx {
     /* debug */
-    height: 50px;
-    background-color: green;
-    border: 3px solid red;
+    /* height: 50px; */
 }
 .dx > li, .sx > li {
     display: inline-block;
 }
 a {
     text-decoration: none;
-    color: white;
+    color:gray;
     margin: 0 15px;
     font-size: 20px;
 }
 .aggiungi {
     display: none;
     position: absolute;
-    left: 15px;
+    left: 0px;
     top: 25px;
+    background-color: white;
+    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.2));
+    width: 150px;
 }
 .aggiungi > li {
+    font-size: 20px;
     list-style: none;
-    margin: 5px 0;
+    margin: 15px 10px;
+    text-align: center;
+    color: gray;
 }
 .relativo {
     position: relative;
 }
+
+/* tasto per apk */
+#apk {
+    background-color: #eb008d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+/* classe per js */
 .dblock {
     display: block;
-}
-.dnone {
-    display: none;
 }
