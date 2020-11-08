@@ -10,24 +10,14 @@
 
 $(document).ready(function () {
 
-    
-    var clicca = $('.cliccami');
+    $('.relativo').click(function () {
 
-    clicca.click(function () {
-        $(this).next().toggleClass('dblock');
+        $(this).siblings().find('ul').removeClass('dblock');
+
+        $(this).find('ul').toggleClass('dblock');
+
     });
-
 });
-
-
-
-
-
-
-
-
-
-
 
 
 
